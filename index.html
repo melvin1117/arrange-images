@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arrange Images</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+  <style type="text/css">
+    body {
+      height: 100vh;
+    }
+
+    .align-content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="align-content">
+    <div class="container">
+      <form action="php/createFolder.php" method="post">
+        <input type="text" name="folderName" id="folderName" placeholder="Enter new folder name" required/>
+        <button type="submit" class="btn btn-success" style="margin-bottom: 10px">
+          Create
+        </button>
+      </form>
+
+      <h3 style="margin-bottom: 30px">or</h3>
+      <a href="php/list.php"><button class="btn btn-primary">Open</button></a>
+    </div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
